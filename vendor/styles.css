@@ -1,5 +1,7 @@
 div.ripple-effect-container {
   position: relative;
+  padding:0px;
+  margin: 0px;
 }
 
 div.ripple-effect-container div.ripple-effect-overlay {
@@ -8,4 +10,5 @@ div.ripple-effect-container div.ripple-effect-overlay {
   left: 0px;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
