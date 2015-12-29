@@ -4,6 +4,6 @@
 module.exports = {
   name: 'ember-cli-ripple-effect',
   included: function(app) {
-    app.import("veder/styles.css");
+    app.import("vendor/styles.css");
   }
 };
