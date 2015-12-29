@@ -1,26 +1,18 @@
 # Ember-cli-ripple-effect
 
-This README outlines the details of collaborating on this Ember addon.
+A simple wrapper component that displays a ripple effect when clicked, then
+passes the click event to the underlying wrapped element.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+* `ember install ember-cli-ripple-effect`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+In your template, just wrap your element inside the helper.
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
+          {{#ripple-effect}}
+          <button {{action "foobar"}}>Foo Bar!</button>
+          {{/ripple-effect}}
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).

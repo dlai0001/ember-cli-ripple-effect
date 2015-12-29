@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-ripple-effect",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Creates a ripple effect when clicked, then passes the click to the underlying web element.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/dlai0001/ember-cli-ripple-effect",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -37,7 +37,8 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ripple effect"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
