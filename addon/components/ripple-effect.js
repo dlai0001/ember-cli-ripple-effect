@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     overlay.click((event) => {
       this.rippleOut(evt, overlay);
     });
-  }.on('didInsertElement');
+  }.on('didInsertElement'),
 
   rippleOut: function(evt, targetElement) {
     // Create SVG circle
