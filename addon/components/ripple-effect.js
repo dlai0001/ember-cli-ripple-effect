@@ -7,6 +7,12 @@ export default Ember.Component.extend({
   onInsert: function() {
     var overlay = this.$("div.ripple-effect-container div.ripple-effect-overlay");
     overlay.click((event) => {
+
+      overlay.hide(); //temporarily hide the overlay so we can send the event to the element underneath.
+      var elementUnderneath = document.elementFromPoint(event.clientX, event.clientY);
+      Ember.$(elementUnderneath).trigger(event);
+      overlay.show();
+
       this.rippleOut(event, overlay);
     });
   }.on('didInsertElement'),
