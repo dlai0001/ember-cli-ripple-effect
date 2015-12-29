@@ -1,0 +1,11 @@
+div.ripple-effect-container {
+  position: relative;
+}
+
+div.ripple-effect-container div.ripple-effect-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
