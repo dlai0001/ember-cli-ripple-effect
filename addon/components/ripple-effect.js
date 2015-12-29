@@ -7,14 +7,14 @@ export default Ember.Component.extend({
   onInsert: function() {
     var overlay = this.$("div.ripple-effect-container div.ripple-effect-overlay");
     overlay.click((event) => {
-      this.rippleOut(evt, overlay);
+      this.rippleOut(event, overlay);
     });
   }.on('didInsertElement'),
 
-  rippleOut: function(evt, targetElement) {
+  rippleOut: function(event, targetElement) {
     // Create SVG circle
     var svgImg = this.$("<svg><g id=\"two\"> <circle fill=\"rgba(255,255,255,0.3)\" " +
-        "cx=\"" + evt.offsetX + "\" cy=\"" + evt.offsetY +  "\" r=\"20\"/> </g></svg>");
+        "cx=\"" + event.offsetX + "\" cy=\"" + event.offsetY +  "\" r=\"20\"/> </g></svg>");
     svgImg.css("position", "absolute");
     svgImg.css("float", "left");
     svgImg.css("left", "0px");
