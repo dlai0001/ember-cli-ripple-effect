@@ -10,8 +10,8 @@ export default Ember.Component.extend({
 
       overlay.hide(); //temporarily hide the overlay so we can send the event to the element underneath.
       var elementUnderneath = document.elementFromPoint(event.clientX, event.clientY);
-      Ember.$(elementUnderneath).trigger(event);
       overlay.show();
+      Ember.$(elementUnderneath).trigger("click");      
 
       this.rippleOut(event, overlay);
     });
